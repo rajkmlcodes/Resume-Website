@@ -1,0 +1,338 @@
+/* IMPORTING GOOGLE FONTS */
+@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&family=Noto+Sans:wght@100;200;300;400;500;600;700;800;900&family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+
+* {
+    /* border: 1px solid red; */
+    margin: 0;
+    padding: 0;
+    font-family: 'Bai Jamjuree', sans-serif;
+    font-family: 'Noto Sans', sans-serif;
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 0;
+}
+
+.container {
+    min-width: 350px;
+    max-width: 800px;
+    border: 1px solid rgb(235, 235, 235);
+    border-radius: 10px;
+    padding: 2% 3%;
+    margin: 2% 3%;
+    overflow: hidden;
+
+    box-shadow:
+    0px 1px 2.3px rgba(0, 0, 0, 0.017),
+    0px 2.3px 5.5px rgba(0, 0, 0, 0.024),
+    0px 4.4px 10.3px rgba(0, 0, 0, 0.03),
+    0px 7.8px 18.3px rgba(0, 0, 0, 0.036),
+    0px 14.6px 34.3px rgba(0, 0, 0, 0.043),
+    0px 35px 82px rgba(0, 0, 0, 0.06)
+  ;
+}
+
+.profile-details {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+/* profile details */
+.profile-image img {
+    width: 100px;
+    border-radius: 100%;
+}
+
+/* stying profile name and contact details div */
+.profile-name-and-contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 05px 20px 0 20px;
+}
+
+/* styling profile name or my name in the resume on the top-left corner */
+.profile-name {
+    font-size: 38px;
+    font-weight: 500;
+    color: #222;
+}
+
+/* address below my name */
+address {
+    display: inline-flex;
+    flex-wrap: wrap;
+    gap: 5px;
+    font-family: 'Noto Sans', sans-serif;
+    font-style: normal;
+    font-size: 14px;
+}
+.email {
+    /* text-decoration: underline; */
+    color: blue;
+}
+
+
+/* social media handles div */
+.social-handles {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-end;
+    align-items: flex-end;
+    min-width: 50%;
+    max-width: 100%;
+    padding: 05px 20px 0 20px;
+    gap: 10px;
+    user-select: auto;
+}
+
+/* social media links */
+.social-links {
+    background: #f0f0f07c;
+    padding: 6px;
+    border-radius: 100px;
+    opacity: 0.6;
+    transition: 0.2s ease-in-out;
+    user-select: none;
+}
+.bi {
+    user-select: none;
+}
+.social-links:hover {
+    cursor: pointer;
+    background: #f0f0f0dc;
+    opacity: 0.8;
+}
+
+
+/* looking for */
+.looking-for {
+    margin-top: 20px;
+    user-select: none;
+}
+
+.mini-title {
+    font-size: 15px;
+    color: #777;
+    font-family: 'Noto Sans', sans-serif;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+
+.looking-for-text, .achievements-list, .experience-list, .edu-list, .skills-list, .project-list-items{
+    padding: 0 20px;
+    margin-bottom: 25px;
+}
+
+.looking-for-text p, .achievements-list p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px !important;
+    color: #444;
+}
+
+
+
+
+
+/* experience */
+.experience-list {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 15px;
+}
+
+.role, .class-title, .project-title {
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+}
+.company-name, .edu-list-items, .project-list-items {
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+}
+.duration-month {
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    color: #666;
+}
+.project-skills {
+    font-size: 14px;
+    color: #777;
+    min-width: 400px;
+    max-width: 600px;
+}
+
+
+/* education */
+.edu-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 10px;
+}
+
+
+.edu-list-items p, .project-list-items p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    color: #666;
+    font-weight: 500;
+}
+
+
+
+/* skills */
+.skills-list ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    list-style-type: none;
+    gap: 20px;
+    width: 100%;
+    user-select: none;
+}
+
+.skills-name {
+    text-decoration: none;
+    background: #f1f1f191;
+    border-radius: 100px;
+    padding: 6px 12px;
+    font-size: 14px;
+    color: #9b9b9b;
+}
+
+
+/* other skills list and wants list section styling */
+.other-skills-list, .wants-list  {
+    padding: 0px 0px 0px 40px;
+    margin-bottom: 25px;
+}
+
+.other-skills-list-items, .wants-list-items {
+    color: #444;
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+}
+
+
+
+/* PRINT BUTTON STYLING */
+.print-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 40px;
+    background: transparent;
+    margin: 30px 0;
+    overflow: hidden;
+}
+
+.centered-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 340px;
+    height: 100%;
+    overflow: hidden;
+}
+
+.print {
+    text-align: center;
+    background: #7473e3;
+    color: #fff;
+    border: 0;
+    border-radius: 5px;
+    outline: 0;
+    width: 100%;
+    height: 100%;
+    font-size: 20px;
+    font-weight: 500;
+    transition: background 0.2s ease-in-out;
+}
+
+.print:hover {
+    cursor: pointer;
+    background: #5e5cda;
+}
+
+
+
+/* MEDIA QUERIES FOR RESPONSIVE DESIGN */
+@media only screen and (max-width: 700px) {
+    
+
+    body {
+        justify-content: flex-start;
+        align-items: flex-start;
+        padding: 0;
+        margin: 0;
+        box-shadow: none;
+    }
+
+    .container {
+        padding: 40px 0;
+        margin: 0;
+        width: 100%;
+        border: none;
+        overflow: hidden;
+    }
+
+    .profile-details {
+        width: 100%;
+    }
+
+    .profile-name-and-contact {
+        width: 80%; 
+        padding: 8px 0 0 8px;
+    }
+
+    /* name in resume */
+    .profile-name {
+        font-size: 30px;
+    }
+    
+    /* social media handles div */
+    .social-handles {
+        flex-direction: column;
+        min-width: 8%;
+        max-width: 10%;
+        padding: 0;
+        gap: 3px;
+        font-size: 14px;
+    }
+
+    /* social meida links */
+    .social-links {
+        padding: 3px;
+    }
+
+
+    /* skills */
+    .project-skills {
+        font-size: 13px;
+        min-width: 200px;
+        max-width: 600px;
+        overflow: hidden;
+    }
+  }
