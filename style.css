@@ -51,6 +51,7 @@ body {
 .profile-image img {
     width: 100px;
     border-radius: 100%;
+    border: 1ps solid #000;
 }
 
 /* stying profile name and contact details div */
