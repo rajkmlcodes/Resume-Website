@@ -258,7 +258,7 @@ address {
     overflow: hidden;
 }
 
-.print {
+/* .print {
     text-align: center;
     background: #7473e3;
     color: #fff;
@@ -270,12 +270,12 @@ address {
     font-size: 20px;
     font-weight: 500;
     transition: background 0.2s ease-in-out;
-}
+} */
 
-.print:hover {
+/* .print:hover {
     cursor: pointer;
     background: #5e5cda;
-}
+} */
 
 
 
